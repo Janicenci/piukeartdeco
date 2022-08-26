@@ -115,7 +115,7 @@ ul li a:hover {
 }
 
 .Suscribite:hover {
-    transform: translateY(-3px); scale(1.05);
+    transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 7px 0px black(0, 0, 0, .4);
     filter: none;
 }
@@ -161,7 +161,7 @@ ul li a:hover {
 }
 
 .rs ul li a:hover{
-    transform: translateY(-3px); scale(1.05);
+    transform: translateY(-3px) scale(1.05);
     box-shadow: 0 3px 5px 0px black(0, 0, 0, .4);
     filter: none;
 }
@@ -185,7 +185,7 @@ ul li a:hover {
 }
   
 .link-menu a:hover {
-    transform: translateY(-3px); scale(1.05);
+    transform: translateY(-3px) scale(1.05);
 }
 
 .Copy {grid-area: 3 / 1 / 4 / 3; }
