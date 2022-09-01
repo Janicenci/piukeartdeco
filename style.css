@@ -25,7 +25,7 @@ body {
   
 #footer { grid-area: footer; }
 
-/*INICIO header MENU NAV*/
+/*INICIO header MENU NAV
 
 #header {
     width: 100%;
@@ -74,10 +74,7 @@ ul li a:hover {
 
 /*FIN header MENU NAV*/
 
-.main section img {
-    width: 100%;
-    height: auto;
-}
+
 /*INICIO FOOTER*/
 
 
@@ -329,4 +326,27 @@ ul li a:hover {
 }
 .contacto-map {
     font-size: 30px;
+}
+
+
+
+/*INICIO DE @MEDIA Q */
+
+@media (max-width: 576px) {
+    #footer {
+        display: flex;
+        flex-grow: column;
+        color:yellow;
+        width: 100%;
+
+    }
+   
+  
+}
+
+.carousel-inner img {
+    object-fit:none;
+    padding: 40px;
+    background-color: darkred;
+
 }
