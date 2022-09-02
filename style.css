@@ -6,7 +6,6 @@
 
 
 body {  
-    background-color: aquamarine;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
@@ -25,65 +24,18 @@ body {
   
 #footer { grid-area: footer; }
 
-/*INICIO header MENU NAV
 
-#header {
-    width: 100%;
-    height: 16%;
-    background-color: rgb(59, 192, 76);
-    background-size: 15px;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    z-index: 1;
-}
-
-.menu {
-    width: 90%;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-}
-
-.menu img {
-    width: 90px;
-    cursor: pointer;
-    position: relative; left: 2cm;
-    box-sizing: border-box;
-}
-
-.menu nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative; right: 4cm;
-}
-
-ul li a:hover {
-    background-color: hotpink;
-}
-
-.menu nav ul li a {
-    text-decoration: none;
-    color: blueviolet;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 35px;
-}
-
-/*FIN header MENU NAV*/
 
 
 /*INICIO FOOTER*/
 
 
 #footer .containerfooter {
-    background-color: rgb(207, 19, 231);
+   
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: minmax(20px, auto);
-    gap: 1em;
+   
 }
 
 .newsletter {
@@ -95,8 +47,7 @@ ul li a:hover {
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
     margin-top: 20px;
-    background-color: pink;
-    padding-top: 50px;
+    padding-top: 20px;
     
 
 }
@@ -109,6 +60,7 @@ ul li a:hover {
     cursor: pointer;
     background-color: darkorange;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .Suscribite:hover {
@@ -121,7 +73,6 @@ ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(41, 209, 125);
     font-family:'Bebas Neue', cursive; 
     text-align: center;
     font-size: 30px;
@@ -167,7 +118,7 @@ ul li a:hover {
 
 .link-menu {
     text-align: center;
-    background-color: aqua;
+    background-color: black;
     align-content: center;
 }
 
@@ -178,7 +129,7 @@ ul li a:hover {
     font-size: 15px;
     font-family: 'Amatic SC', cursive;
     margin: 3px;
-    color: black;
+    color: white;
 }
   
 .link-menu a:hover {
@@ -190,8 +141,9 @@ ul li a:hover {
 .Copy {
     text-align: center;
     align-content: center;
-    background-color: cornflowerblue;
+    background-color: black;
     padding: 0px 20px;
+    color:darkgrey
 }
 
 .Copy p {
@@ -201,14 +153,15 @@ ul li a:hover {
 .Copy hr {
     border: none;
     height: 1px;
-    background-color: red;
+    background-color:darkgray;
 }
 
 /*INICIO PAGINA PRODUCTOS*/
 .productos-container {
     width: 100%;
-    margin-top: 200px;
+    margin-top: 100px;
     display: inline-block;
+    margin-bottom: 100px;
 }
 
 .productos-container p{
@@ -241,14 +194,15 @@ ul li a:hover {
 /*INICIO DE ENVIOS*/
 
 .envios {
-    background-color: black;
-    color:white;
+    background-color: white;
+    color:black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
     height: 500px;
     margin-top: 110px;
+    margin-bottom: 100px;
     text-align: center;
     font-family: 'Amatic SC', cursive;
 }
@@ -329,24 +283,30 @@ ul li a:hover {
 }
 
 
-
-/*INICIO DE @MEDIA Q */
-
-@media (max-width: 576px) {
-    #footer {
-        display: flex;
-        flex-grow: column;
-        color:yellow;
-        width: 100%;
-
-    }
-   
-  
+/*CAROUSEL INDEX*/
+.main {
+    margin-top: 40px;
 }
 
-.carousel-inner img {
-    object-fit:none;
-    padding: 40px;
-    background-color: darkred;
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 1000px;
+    height: 1000px;
 
+}
+
+
+.carousel .carousel-item img {
+    width: 800%;
+    max-height: 2060px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.container {
+    background-color: blue;
 }
