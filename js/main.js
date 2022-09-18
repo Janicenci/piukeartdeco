@@ -4,11 +4,11 @@ document.addEventListener ('DOMContentLoaded', () => {
         duration: 100,
         dist: -80,
         shift: 5,
-        padding: 5,
+        padding: 10,
         numVisible: 3,
         indicators: true,
         noWrap: false,
+        
        
-    
     });
 });

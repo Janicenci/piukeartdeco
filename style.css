@@ -20,7 +20,7 @@ body {
   
 #header { grid-area: header ; }
   
-.main { grid-area: main; }
+main { grid-area: main; }
   
 #footer { grid-area: footer; }
 
@@ -29,28 +29,20 @@ body {
 
 /*INICIO FOOTER*/
 
-
 #footer .containerfooter {
-   
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: minmax(20px, auto);
-    background-image: url(./assets.css/taller);
-   
+    background-color: black;
 }
 
 .newsletter {
-    display: block;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
+    background-color:black;
+    margin: 50px;
+    padding: 20px;
     text-align: center;
-    font-family: 'Bebas Neue', cursive;
+    font-family:'Bebas Neue', cursive; 
     font-size: 30px;
-    margin-top: 20px;
-    padding-top: 20px;
-    
-
 }
 
 .newsletter .Suscribite {
@@ -71,25 +63,22 @@ body {
     filter: none;
 }
 
+
 .rs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family:'Bebas Neue', cursive; 
+    background-color: black;
+    margin: 50px;
+    padding: 20px;
     text-align: center;
+    font-family:'Bebas Neue', cursive; 
     font-size: 30px;
-    margin-top: 20px;
-    height: 30vh;
-
-
 }
+
 .rs ul li {
     display: inline-block;
     margin: 10px 10px;
     width: 50px;
     height: 50px;
-    text-align: center;
-  
+   
 }
 
 .rs ul li a {
@@ -105,7 +94,7 @@ body {
     border-radius: 10px;
    
 }
- 
+
 .rs ul:hover a{
     filter: blur(2px);
 }
@@ -122,6 +111,7 @@ body {
     text-align: center;
     background-color: black;
     align-content: center;
+    padding-top: 10px;
 }
 
 .link-menu a {
@@ -161,6 +151,8 @@ body {
 
 /*INICIO PAGINA PRODUCTOS*/
 
+
+
 .col{
     display: flex;
     align-items: center;
@@ -195,6 +187,7 @@ body {
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     box-shadow: 0px 0px 20px black;
+    
 }
 
 @keyframes gradient {
@@ -293,20 +286,23 @@ body {
 
 /*CAROUSEL INDEX*/
 
-.main {
-    margin-top: 40px;
+.maincarousel {
+    background-color:black;
+    padding: 20px;
+   
 }
 
 .carousel{
-    min-height: 550px;
-    background-color: rgb(241, 137, 207);
+    min-height: 600px;
+    background-color:black;
+
 }
 .carousel .carousel-item {
     display: flex;
     width: 600px;
     height: 600px;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     user-select: none;
 }
@@ -325,6 +321,12 @@ body {
     margin: 0 15px;
     background: red;
 }
+
+.carousel .carousel-item .im {
+    width: 300px;
+ 
+}
+
 
 .navbar {
     font-family: 'Bebas Neue', cursive; 
