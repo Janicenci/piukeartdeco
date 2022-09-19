@@ -105,6 +105,17 @@
   font-family: rgb(218, 155, 20);
 }
 
-.envios {
-  font-family: "Amatic SC", cursive;
+.envios, .envios-mensajeria, .envios-take, .envios-correo {
+  font-family: "Amatic SC";
+}
+
+.envios, .envios-mensajeria, .envios-take, .envios-correo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  width: 80%;
+  height: 500px;
+  padding: 0px 40px;
+  margin: 100px 100px;
 }/*# sourceMappingURL=main.css.map */
