@@ -1,3 +1,17 @@
 @import "footer";
-    
+ 
 
+$tex:(
+    tipografia: 'Amatic SC', cursive
+    color: rgb(218, 155, 20)
+);
+
+@each $nombre,$valor in $tex {
+    .envios-#{$nombre} {
+        font-family: $valor;
+    }
+}
+
+.envios {
+    font-family: map-get($tex, tipografia);
+}
