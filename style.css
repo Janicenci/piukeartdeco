@@ -692,6 +692,7 @@ box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
   }
 #carousel div.hideRight img {
     width: 200px;
+    border-color: #23a6d5;
   }
 #carousel div.prev {
     z-index: 5;
